@@ -10,16 +10,16 @@ from https://stackoverflow.com/questions/22892120/how-to-generate-a-random-strin
 package main
 
 import (
-  "fmt"
+	"fmt"
 	"math/rand"
 	"time"
 
-  "github.com/winebarrel/randstr"
+	"github.com/winebarrel/randstr"
 )
 
 func main() {
-  src := rand.NewSource(time.Now().UnixNano())
-  str := randstr.String(src, 16)
-  fmt.Println(str)
+	src := rand.NewSource(time.Now().UnixNano())
+	str := randstr.String(src, 16)
+	fmt.Println(str)
 }
 ```
